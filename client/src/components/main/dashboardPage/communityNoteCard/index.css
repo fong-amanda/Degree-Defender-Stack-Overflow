@@ -1,0 +1,91 @@
+.community-note {
+  width: 100%;
+  max-width: 70rem;  
+  height: auto;      
+  background: #fff;
+  border-radius: 8px; 
+  padding: 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  margin-bottom: 2rem;
+}
+
+.community-note-mid {
+  flex-grow: 1;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.2rem;
+}
+
+.community-note-title {
+  color: #1e40af;
+}
+
+.community-note-question {
+  color: #1e40af;
+}
+
+.noteStats {
+  color: #666;
+  font-size: 0.9rem;
+  margin-left: auto;
+  align-self: flex-end;
+}
+
+.approve-button {
+  display: block;
+  background-color: #1e40af;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 1rem;
+  align-self: flex-end;
+  margin-bottom: 0;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.btns-mod {
+  display: flex;
+  flex-direction: row;
+}
+
+.approve-button:hover {
+  background: #092140;
+  transform: scale(1.05);
+}
+
+.approve-button:active {
+  background-color: #1e40af;
+  transform: scale(1.05);
+}
+
+.deny-button {
+  display: block;
+  background-color: #7f869c;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  align-self: flex-end;
+  margin: 0;
+}
+
+.deny-button:hover {
+  background: #363942;
+  transform: scale(1.05);
+}
+
+.deny-button:active {
+  background-color: #7f869c;
+  transform: scale(1.05);
+}

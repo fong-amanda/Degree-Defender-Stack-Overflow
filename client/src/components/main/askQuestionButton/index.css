@@ -1,0 +1,23 @@
+.standard-button {
+    display: block;
+    background-color: #1e40af;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+.standard-button:hover {
+    background: #092140;
+    transform: scale(1.05);
+}
+  
+.standard-button:active {
+    background-color: #1e40af;
+    transform: scale(1.05);
+}

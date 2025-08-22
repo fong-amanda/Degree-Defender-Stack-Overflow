@@ -1,0 +1,51 @@
+.user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed #dadada;
+  padding: 20px;
+  border-radius: 8px;
+  background: #ffffff;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  max-width: 68rem;
+}
+
+.user:hover {
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+  transform: translateX(5px);
+  background: #f8f9fa;
+}
+
+.user_mid {
+  flex-grow: 1;
+  margin-left: 1rem;
+}
+
+.userUsername {
+  color: #1e40af;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.userUsername:hover {
+  text-decoration: underline;
+}
+
+.userStats {
+  color: #666;
+  font-size: 0.9rem;
+  text-align: right;
+  min-width: 30%;
+}
+
+.pop-out-icon {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.user:hover .pop-out-icon {
+  opacity: 1;
+}

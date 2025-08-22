@@ -1,0 +1,58 @@
+.form {
+  background-color: #cccedf;
+  padding: 20px;
+  width: 60%;
+  margin: 20px auto;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-self: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.user-header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  width: 100%; 
+  padding: 10px 0;
+}
+
+.user-count {
+  font-size: 1.5rem;
+}
+
+.user-list-title {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+.search-bar {
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border-width: 0.3px;
+  margin-left: auto;
+  margin-right: 1rem;
+  width: 20rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-bar:focus {
+  border-color: #1e40af;
+  box-shadow: 0 0 5px #1e40af; /* a little glow effect */
+}
+
+.search-bar::placeholder {
+  color: #666;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.search-bar:focus::placeholder {
+  color: #999;
+  opacity: 0.5;
+}

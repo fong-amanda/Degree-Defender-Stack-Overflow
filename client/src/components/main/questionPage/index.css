@@ -1,0 +1,23 @@
+.btns {
+  margin-right: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btns button {
+  background-color: #dbeafe;
+  color: #1e40af;
+  border-radius: 6px;
+  padding: 0.4rem;
+  border-width: 0px;
+  font-size: 1.1rem;
+}
+
+.btns button:hover {
+  transform: scale(1.05);
+  background-color: #dbeafe;
+}
+
+.question_list:last-child {
+  border-bottom: #000000 1px dashed;
+}

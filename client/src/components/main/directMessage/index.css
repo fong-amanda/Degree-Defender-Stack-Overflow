@@ -1,0 +1,131 @@
+.standard-btn {
+  background-color: #1e40af;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.standard-btn:hover {
+  background: #092140;
+  transform: scale(1.05);
+}
+
+.standard-btn:active {
+  background-color: #1e40af;
+  transform: scale(1.05);
+}
+
+.custom-input {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Container styles */
+.direct-message-container {
+  display: flex;
+  height: 100vh;
+  gap: 16px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.select-user-text {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  color: #0D1B2A;
+}
+
+/* Chat panel styles */
+.chat-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.chat-container h2 {
+  margin-bottom: 16px;
+  font-size: 20px;
+  color: #555;
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 16px;
+  background-color: #fefefe;
+  max-height: 400px;
+}
+
+.chat-message {
+  margin-bottom: 10px;
+}
+
+.chat-message strong {
+  color: #007bff;
+}
+
+.message-input {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* Chat list styles */
+.chats-list {
+  width: 30%;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.chats-list h2 {
+  font-size: 18px;
+  margin-bottom: 16px;
+  color: #555;
+}
+
+.chats-list-card:hover {
+  background-color: #eaeaea;
+}
+
+/* Create panel styles */
+.create-panel {
+  margin-bottom: 16px;
+  padding: 16px;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.create-panel p {
+  border-top: 2px dashed #ccc;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  color: #0D1B2A;
+}
+
+.direct-message-error {
+  color: red;
+  font-weight: bold;
+  margin-top: 15px;
+}

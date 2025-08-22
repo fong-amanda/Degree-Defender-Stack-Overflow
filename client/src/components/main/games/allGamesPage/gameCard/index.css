@@ -1,0 +1,45 @@
+.game-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  background: #f9f9f9;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.game-item:hover {
+  transform: scale(1.01);
+}
+
+.specific-game-layout p {
+  margin: 5px 0;
+  display: flex;
+  align-self: center;
+}
+
+.game-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.game-item li {
+  background: #eef2f3;
+  border-radius: 4px;
+}
+
+.game-info {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.game-players {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  color: #1e40af;
+}
+
+.specific-game-layout {
+  display: flex;
+  flex-direction: row;
+}

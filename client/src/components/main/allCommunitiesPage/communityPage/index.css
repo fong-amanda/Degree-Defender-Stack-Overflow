@@ -1,0 +1,66 @@
+.communities-page {
+    width: 100%;
+}
+
+.community-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-bottom: 1.5rem;
+  }
+  
+  .header-left {
+    flex: 1;
+    padding-right: 1rem;
+    justify-content: center;
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    white-space: nowrap;
+  }
+  
+  .header-right p {
+    font-size: 1rem;
+    font-style: italic;
+    margin: 0;
+  }
+  
+  .header-left h2 {
+    font-size: 2.5rem;
+    color: #415A77;
+    margin-bottom: 0.5rem;
+  }
+  
+  .header-left p {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 0;
+  }
+
+  .community-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .top-row {
+    display: flex;
+    gap: 2rem;
+    flex-direction: row;
+  }
+  
+  .polls-column,
+  .leaderboard-column {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .bottom-row {
+    width: 100%;
+  }
+  
+
+  

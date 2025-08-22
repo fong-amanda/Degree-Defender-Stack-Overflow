@@ -1,0 +1,26 @@
+.tagNode {
+  place-self: center;
+  border: #000000 1px dashed;
+  padding: 5%;
+  max-width: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.tagName {
+  color: #1e40af;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.tagDescription {
+  font-size: 1rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.questionCount {
+  font-size: 0.95rem;
+}

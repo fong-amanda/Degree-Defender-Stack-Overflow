@@ -1,0 +1,404 @@
+.community-details {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: none; /* remove width restriction */
+}
+
+.community-sidebar {
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.communities-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 0;
+}
+
+.communities-page-title {
+  font-size: 2.5rem;
+  color: #415A77;
+  display: flex;
+  justify-content: space-between;
+}
+
+.standard-button-join-var {
+  display: block;
+  background-color: #dbeafe;
+  color: white;
+  border-radius: 8px;
+  width: 4rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.standard-button-join-var.joined {
+  background: #9bc6fe;
+  color: white;
+}
+
+.standard-button-join-var:not(.joined) {
+  background: #1e40af;
+  color: white;
+}
+
+.standard-button-join-var:hover {
+  background: #092140;
+}
+
+/* gets rid of list formatting */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.community-item {
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px dashed #dadada;
+  padding: 20px;
+  border-radius: 8px;
+  background: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+
+.community-item.active {
+  background: #e3f2fd;
+}
+
+.community-item:hover {
+  background: #f1f1f1;
+}
+
+.community-title {
+  margin: 0.6rem;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.community-privacy {
+  margin: 0.6rem;
+  font-size: 0.95rem;
+  font-style: italic;
+  font-weight: 500;
+  color: #5c90d5;
+}
+
+.community-item p {
+  font-size: 1.2rem;
+  color: #666;
+  margin: 0.6rem;
+  margin-bottom: 1.3rem;
+}
+
+.join-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.create-community-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.create-panel-title {
+  font-size: 1.7rem;
+}
+
+.title-field {
+  padding: 5px 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border-width: 0.3px;
+  width: 100%;
+  outline: none;
+  transition: border-color 0.3s ease;
+  display: flex;
+}
+
+.title-field:focus {
+  border-color: #1e40af;
+  box-shadow: 0 0 5px #1e40af; /* a little glow effect */
+}
+
+.title-field::placeholder {
+  color: #666;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.title-field:focus::placeholder {
+  color: #999;
+  opacity: 0.5;
+}
+
+.description-field {
+  padding: 5px 15px;
+  font-size: 16px;
+  border-radius: 10px;
+  border-width: 0.3px;
+  width: 75%;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.description-field:focus {
+  border-color: #1e40af;
+  box-shadow: 0 0 5px #1e40af; /* a little glow effect */
+}
+
+.description-field::placeholder {
+  color: #666;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.description-field:focus::placeholder {
+  color: #999;
+  opacity: 0.5;
+}
+
+.password-field {
+  margin-top: 1rem;
+  padding: 5px 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border-width: 0.3px;
+  width: 75%;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.password-field:focus {
+  border-color: #1e40af;
+  box-shadow: 0 0 5px #1e40af; /* a little glow effect */
+}
+
+.password-field::placeholder {
+  color: #666;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.password-field:focus::placeholder {
+  color: #999;
+  opacity: 0.5;
+}
+
+.modal-content .button-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.privacy-toggle-btn {
+  display: block;
+  background-color: #1e40af;
+  color: white;
+  border-radius: 8px;
+  width: 5rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.privacy-toggle-btn:hover {
+  background: #092140;
+  transform: scale(1.05);
+}
+
+.polls-toggle-btn {
+  display: block;
+  background-color: #5c90d5;
+  color: white;
+  border-radius: 8px;
+  width: 4rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.polls-toggle-btn:hover {
+  background: #2d65ae;
+  transform: scale(1.05);
+}
+
+.err-message{
+  color: #ff0000;
+}
+
+.leaderboard-toggle-btn {
+  display: block;
+  background-color: #5c90d5;
+  color: white;
+  border-radius: 8px;
+  width: 4rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.leaderboard-toggle-btn:hover {
+  background: #2d65ae;
+  transform: scale(1.05);
+}
+
+.row{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.create-comm-btn {
+  display: block;
+  background-color: #1e40af;
+  color: white;
+  border-radius: 8px;
+  width: 5rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.create-comm-btn:hover {
+  background: #092140;
+  transform: scale(1.05);
+}
+
+.cancel-comm-btn {
+  display: block;
+  background-color: #8a90a2;
+  color: white;
+  border-radius: 8px;
+  width: 5rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cancel-comm-btn:hover {
+  background: #4f535c;
+  transform: scale(1.05);
+}
+
+.password-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Greyed-out background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1000; /* Ensure it's on top of other content */
+}
+
+.password-modal .modal-content {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  width: 40rem;
+  padding: 20px;
+}
+
+.password-modal h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.password-modal input[type='password'] {
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 80%;
+  margin-bottom: 1rem;
+  margin-left: auto;  
+  margin-right: auto; 
+  display: block;  
+}
+
+.password-modal .button-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.password-modal .join-comm-btn,
+.password-modal .cancel-comm-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  color: white;
+}
+
+.password-modal .join-comm-btn {
+  background-color: #1e40af;
+}
+
+.password-modal .join-comm-btn:hover {
+  background-color: #092140;
+}
+
+.password-modal .cancel-comm-btn {
+  background-color: #8a90a2;
+}
+
+.password-modal .cancel-comm-btn:hover {
+  background-color: #4f535c;
+}
+

@@ -1,0 +1,19 @@
+.dashboard-header {
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: #415A77;
+  justify-items: center;
+}
+
+.dashboard-page {
+  flex: 2;
+}
+
+.dashboard_list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  justify-items: center;
+  width: 100%;
+}
+

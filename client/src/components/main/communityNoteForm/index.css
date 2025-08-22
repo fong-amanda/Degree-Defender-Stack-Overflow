@@ -1,0 +1,83 @@
+/* All the CSS related to  community note submission form*/
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* a semi-transparent background for the modal */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    width: 400px;
+    max-width: 90%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+  }
+  
+  .modal-content textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: none;
+  }
+  
+  .bluebtn {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 12px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .cancelbtn {
+    background-color: #ccc;
+    color: black;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .bluebtn:hover {
+    background-color: #0056b3;
+  }
+  
+  .cancelbtn:hover {
+    background-color: #999;
+  }
+
+  .error-text {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  .note-text {
+    color: black;
+    background-color: white;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .note-text.error {
+    background-color: #ffe6e6;
+  }
+  
+  .success-text {
+    color: green;
+    margin-top: 10px;
+    font-weight: 500;
+  }
+  

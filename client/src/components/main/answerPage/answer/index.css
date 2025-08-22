@@ -1,0 +1,75 @@
+/* All the CSS related to answers Page*/
+.answer {
+  display: flex;
+  flex-direction: row;
+  border-bottom: #000000 1px dashed;
+}
+
+.column-formatting {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+
+.standard-btn-remodel {
+  display: block;
+  background-color: #1e40af;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 1rem;
+}
+
+.standard-btn-remodel:hover {
+  background: #092140;
+  transform: scale(1.05);
+}
+
+.standard-btn-remodel:active {
+  background-color: #1e40af;
+  transform: scale(1.05);
+}
+
+.answerText {
+  width: 75%;
+  margin-left: 1rem;
+
+}
+
+.answerAuthor {
+  margin-left: 5%;
+}
+
+.answer_author {
+  color: green;
+}
+
+.comNoteButton {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+
+.comNoteButton:hover {
+  background-color: #0056b3;
+}
+
+.comNoteButton:active {
+  background-color: #004494;
+}
+
+.answerAuthor .comNoteButton {
+  margin-top: 10px;
+}
+

@@ -1,0 +1,8 @@
+.user-card-container {
+  flex: 2;
+}
+
+.users_list {
+  display: flex;
+  flex-direction: column;
+}

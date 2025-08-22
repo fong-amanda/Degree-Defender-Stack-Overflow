@@ -1,0 +1,80 @@
+.sideBarNav {
+  display: flex;
+  flex-direction: column;
+  width: 18%;
+  border-right: 2px solid #ccc;
+  padding: 20px;
+  align-items: center;
+  background-color: #f7f9fc;
+  min-height: 100vh;
+  gap: 20px;
+}
+
+.menu_section {
+  width: 100%;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu_title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #1e40af;
+  text-transform: uppercase;
+}
+
+.menu_button {
+  width: 90%;
+  height: 45px;
+  margin-top: 10px;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 45px;
+  color: #415A77;
+  background-color: white;
+  font-weight: 600;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.menu_button:hover {
+  background: #dbeafe;
+  color: #1e40af;
+  transform: scale(1.05);
+}
+
+.menu_selected {
+  background: #1e40af;
+  color: white;
+  font-weight: bold;
+}
+
+.additional-options {
+  display: flex;
+  flex-direction: column;
+  padding: 9px 0;
+  align-items: center;
+}
+
+.message-options {
+  width: 90%;
+  padding: 15px;
+}
+
+.message-option-selected {
+  background: #1e40afaf;
+  color: white;
+  width: 110%;
+  font-weight: bold;
+}

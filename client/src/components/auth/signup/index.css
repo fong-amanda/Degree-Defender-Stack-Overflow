@@ -1,0 +1,112 @@
+/* Container styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #dbeafe;
+  padding: 20px;
+}
+
+/* Heading styles */
+.container h2 {
+  font-size: 2rem;
+  color: #415A77;
+}
+
+.container h4 {
+  font-size: 1.4rem;
+  color: #0D1B2A;
+  margin: 15px 0 5px; /* Adjusted for better spacing */
+  text-align: left; /* Align text to the left */
+  width: 100%; /* Ensure alignment respects the form's width */
+  max-width: 400px; /* Match the form's max width */
+}
+
+/* Form styles */
+form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input styles */
+.input-text {
+  padding: 12px;
+  font-size: 16px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  box-sizing: border-box;
+  transition:
+    border-color 0.3s,
+    box-shadow 0.3s;
+}
+
+.input-text:focus {
+  border-color: #1e40af;
+  box-shadow: 0 0 5px #1e40af; /* a little glow effect */
+}
+
+/* Button styles */
+.standard-btn {
+  background-color: #1e40af;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.standard-btn:hover {
+  background: #092140;
+  transform: scale(1.05);
+}
+
+.standard-btn:active {
+  background-color: #1e40af;
+  transform: scale(1.05);
+}
+
+/* Signup link styles */
+.login-link {
+  margin-top: 30px; /* Increased spacing */
+  font-size: 14px;
+  color: #1e40af;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s;
+  text-align: center; /* Center the link */
+}
+
+.login-link:hover {
+  color: #092140;
+  text-decoration: underline;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.google-button-wrapper {
+  display: flex;
+  justify-content: center;
+  transform: scale(1.2);
+  margin-top: 1rem;
+}
+
+.google-login-button h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}

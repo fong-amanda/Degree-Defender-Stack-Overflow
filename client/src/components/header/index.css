@@ -1,0 +1,139 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 10%;
+  width: 100%;
+  background: #dbeafe;
+  position: relative;
+}
+
+.search-bar {
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border-width: 0.3px;
+  width: 20rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-bar:focus {
+  border-color: #1e40af;
+  box-shadow: 0 0 5px #1e40af; /* a little glow effect */
+}
+
+.search-bar::placeholder {
+  color: #666;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.search-bar:focus::placeholder {
+  color: #999;
+  opacity: 0.5;
+}
+
+.user-dropdown-container {
+  position: relative;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #1e40af;
+  margin-left: 1rem;
+}
+
+.logout-button {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #3090e2;
+  color: #dddddd;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+  background-color: #1e40af;
+  transform: scale(1.05);
+}
+
+.view-profile-button {
+  background-color: #3090e2;
+  color: #dddddd;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px; 
+}
+
+.view-profile-button:hover {
+  background-color: #1e40af;
+  transform: scale(1.05);
+}
+
+.view-profile-button:active {
+  background-color: #1e40af;
+  transform: scale(1.05);
+}
+
+/* btn for user dropdown */
+.user-dropdown-button {
+  background-color: #1e40af;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.user-dropdown-button:hover {
+  background: #092140;
+  transform: scale(1.05);
+}
+
+.user-dropdown-button:active {
+  background-color: #1e40af;
+  transform: scale(1.05);
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: max-content;
+}
+
+.user-dropdown-container:hover .dropdown {
+  display: block;
+}
+
+.dropdown-option {
+  background-color: white;
+  border-radius: 8px;
+  color: black;
+  padding: 12px 16px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dropdown-option:hover {
+  background-color: #ddd;
+}

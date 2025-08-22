@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+.chat-room {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.chat-header {
+  background-color: #1e40af;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 5px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #f9f9f9;
+}
+
+.user-name {
+  font-weight: bold;
+  margin-right: 5px;
+  color: #0D1B2A;
+}
+
+.message-input {
+  display: flex;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #dbeafe;
+}
+
+.message-textbox {
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border-width: 0.3px;
+  width: 70rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.message-textbox:focus {
+  border-color: #1e40af;
+  box-shadow: 0 0 5px #1e40af; /* a little glow effect */
+}
+
+.message-textbox::placeholder {
+  color: #666;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.message-textbox:focus::placeholder {
+  color: #999;
+  opacity: 0.5;
+}
+
+.message-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.standard-btn {
+  background-color: #1e40af;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.standard-btn:hover {
+  background: #092140;
+  transform: scale(1.05);
+}
+
+.standard-btn:active {
+  background-color: #1e40af;
+  transform: scale(1.05);
+}
+
+.error-message {
+  color: red;
+  font-size: 0.85rem;
+  margin-left: 10px; /* Adds space between the button and the error message */
+  background-color: #ffe6e6; /* Light red background for better visibility */
+  padding: 5px 10px;
+  border: 1px solid #ffcccc;
+  border-radius: 4px;
+  display: inline-block; /* Prevents it from stretching unnecessarily */
+  white-space: nowrap; /* Prevents wrapping of the message */
+}
